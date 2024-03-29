@@ -1,7 +1,6 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import { NewsProps } from "./types";
-// import ReactHtmlParser from "react-html-parser";
-
+import NoImage from "assets/images/no_image.png";
 const NewsBox = ({
   title,
   description,
@@ -23,11 +22,12 @@ const NewsBox = ({
         <Box width="full" height="full" maxHeight={180} position="relative">
           <Image
             src={imageUrl}
+            fallbackSrc={NoImage}
             alt={title}
             width="full"
             height="full"
             objectFit="cover"
-            backgroundColor='gray.100'
+            backgroundColor="gray.100"
             objectPosition="center center"
             loading="lazy"
           />
