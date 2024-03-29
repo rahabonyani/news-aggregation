@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## .env file
 
-Change file .env.example to .env
+if .env does not exsits, Change file .env.example to .env
 
 ## Available Scripts
 
